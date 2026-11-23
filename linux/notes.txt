@@ -1,2 +1,2 @@
-Git is tracking changes in this project.
+Project is running on feature branch.
 Working on login feature.
