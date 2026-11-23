@@ -1,0 +1,13 @@
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+class MyHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-type", "text/plain")
+        self.end_headers()
+        self.wfile.write(b"Hello from Python App!")
+
+server = HTTPServer(("127.0.0.1", 8000), MyHandler)
+print("App is running on port 8000")
+server.serve_forever()
+
