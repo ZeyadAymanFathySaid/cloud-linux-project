@@ -1,2 +1,2 @@
-Project is running on main branch.
+Project is running on main and feature branch.
 Working on login feature.
